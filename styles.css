@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body {
-  background-color: white;
+  background-color: #142d4c;
 }
 .title {
-  background-color: blue;
+  background-color: #385170;
   position: sticky;
   top: 0;
   width: 100%;
@@ -15,4 +17,51 @@ body {
 .app-title {
   color: antiquewhite;
   text-align: center;
+}
+.question-card {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 10%;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  height: 350px;
+  background-color: #9fd3c7;
+
+  border-radius: 5px;
+}
+
+.question-box {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-answer {
+  background-color: #ececec;
+  border: none;
+  width: 80px;
+  border-radius: 10px;
+}
+.bookmark-box {
+  background-color: #385170;
+  border-radius: 10px 0;
+  width: 40px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+.bookmark {
+  justify-content: flex-start;
 }
