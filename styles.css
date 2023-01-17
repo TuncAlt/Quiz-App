@@ -1,0 +1,139 @@
+/* BASE Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #142d4c;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Debug-Styles */
+* {
+  _outline: 1px dashed red;
+
+  _background-color: blue;
+}
+/* App-Styles */
+.title {
+  background-color: #385170;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+}
+
+.app-title {
+  margin: 0;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 50px;
+}
+.question-card {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 10%;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  height: 350px;
+  background-color: #9fd3c7;
+  border-radius: 5px;
+}
+
+.question-box {
+  display: flex;
+  top: 50px;
+  position: absolute;
+  justify-content: center;
+  width: 80%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-button-box {
+  display: flex;
+  position: absolute;
+  top: 220px;
+}
+.show-answer {
+  background-color: #ececec;
+  border: none;
+  width: 80px;
+  border-radius: 10px;
+}
+.show-answer:hover {
+  background-color: #385170;
+  color: white;
+}
+.bookmark-box {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+}
+.bookmark {
+  background-color: #385170;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 60px;
+}
+
+.footer {
+  position: fixed;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: #385170;
+  width: 100%;
+  height: 80px;
+}
+.home {
+  display: flex;
+  left: 5px;
+  top: 20px;
+  width: 50px;
+  height: ;
+}
+.bookmarks {
+  display: flex;
+  left: 50%;
+  top: 20px;
+}
+
+.icon-button {
+  background: red;
+  color: aliceblue;
+  height: 48px;
+  width: 48px;
+  border: 0;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.icon-button:hover {
+  background: blue;
+  transform: scale(1.2);
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
